@@ -12,7 +12,8 @@ RUN apt-get update -qq && apt-get install -qqy \
 RUN npm install -g \
 	grunt-cli \
 	nan \
-	node-gyp
+	node-gyp \
+	node-inspector
 
 WORKDIR /usr/src/app
 CMD node
